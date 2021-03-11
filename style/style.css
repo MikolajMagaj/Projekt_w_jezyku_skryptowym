@@ -1,0 +1,755 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    overflow-wrap: break-word;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* szablon */
+
+#header{
+    width:100%;
+    padding-top:62px;
+}
+
+#nav{
+    width:100%;
+    position: fixed;
+    z-index: 10;
+}
+
+#upper{
+    position: fixed;
+    background-color:rgb(241, 241, 241);
+    border-radius:50%;
+    right:60px;
+    bottom:60px;
+    z-index: 10;
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+    display: none;
+}
+
+#main{
+    width:100%;
+    background-color:white;
+    z-index: 1100;
+    margin-top:80px;
+}
+
+#socials{
+    width:56px;
+    position: fixed;
+    height: 304px;
+    z-index: 110;
+    margin-left:10px;
+}
+
+#footer{
+    width:100%;
+    height:26px;
+    background-color:rgba(0, 0, 0, 0.93);
+    color:rgb(241, 241, 241);
+    font-size:12px;
+    clear:both;
+    margin-top:80px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* header */
+
+#header img {
+    width:100%;
+    position: absolute;
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* menu nav */
+
+#nav div{
+    background-color: rgb(241, 241, 241);
+}
+#a_img{
+    float:left;
+    margin-left:35px;
+    margin-right:10%;
+    margin-top:4px;
+}
+
+.a_menu{
+    font-size:22px;
+    display: inline-block;
+    width:14%;
+    text-align: center;
+    height:40px;
+    margin:10px 1%;
+    padding-top:6px;
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+}
+#a_img:hover{
+    cursor:pointer;
+}
+.a_menu:hover{
+    color: rgba(0, 0, 0, 0.5);
+	-webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+}
+.a_menu:not(:hover){
+	color: rgba(0, 0, 0, 1);
+	-webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#nav img{
+    width: 60px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* socials */
+
+.img_soc{
+    width:36px;
+    margin:10px 0 0 10px;
+}
+
+.back_soc{
+    background-color:rgb(241, 241, 241);
+    width:56px;
+    height: 56px;
+    border-radius:50%;
+    margin-top:20px;
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+	box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+}
+.back_soc:hover .img_soc{
+    width:38px;
+    margin:9px 0 0 9px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* footer */
+
+#footer p{
+    margin-left:3%;
+    padding-top:4px;
+    
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* upper */
+
+#upper a div{
+    width:65px;
+    height: 65px;
+}
+
+#upper a div img{
+    padding:19px 0 0 19px;
+    width:27px;
+}
+
+#upper:hover img{
+    padding:17px 0 0 17px;
+    width:31px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* main_page + oferty */
+
+#div_oferty{
+    width:100%;  
+}
+
+#hr_oferty{
+    width:88.5%;
+    margin:80px auto;
+    clear:both;
+}
+
+.main_h2{
+    font-size:2em;
+    text-align:center;
+    width:75%;
+    margin:0 auto;
+}
+
+.a_oferty{
+    color:rgb(0, 0, 0);   
+}
+
+.oferts{
+    width:40%;
+    float:left;
+    margin-left:6.6%;
+    padding-bottom:80px;
+}
+
+#div_oferty img{
+    width:100%;
+}
+
+.p_oferty{
+    font-size:1.6em;
+    margin-left:2%;
+}
+
+.oferts:hover{
+    color: rgba(0, 0, 0, 0.5);
+	-webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+}
+.oferts:hover img{
+    opacity:0.8;
+	-webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.oferts:not(:hover){
+    color: rgba(0, 0, 0, 1);
+	-webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.oferts:not(:hover) img{
+    opacity:1;
+	-webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* cennik */
+
+
+#cennik{
+    width:100%;
+    color:rgba(0,0,0,0.75);
+}
+#cennik h3{
+    font-size:1.75em;
+    padding:20px 0;
+}
+#cennik p{
+    width:65%;
+    border-top:1px solid rgba(0,0,0,0.25);
+    margin:0 auto;
+    padding:20px 0;
+}
+.cont_cennik{
+    text-align: center;
+    width:25%;
+    float:left;
+    background-color:#ebebeb;
+    margin-left:6.25%;
+    font-size:1.6em;
+    border-radius: 2%;
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.4);
+    margin-bottom: 80px;
+}
+
+div#cennik div:nth-of-type(2){
+    background-color:rgba(0,0,0,0.75);
+    color:rgb(241, 241, 241);
+}
+div#cennik div:nth-of-type(2) p{
+    border-top:1px solid #ebebeb;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* kontakt */
+
+#kontakt{
+    width:100%;
+}
+#kontakt iframe{
+    width:65%;
+    margin-left:17.5%;
+}
+#kontakt_icons{
+    width:100%;
+    padding-bottom:80px;
+}
+.div_kontakt{
+    width:25%;
+    float:left;
+    margin-left:6.25%;
+    border-right:1px solid rgba(0, 0, 0, 0.5);
+}
+.img_kontakt{
+    width:15%;
+    float:left;
+}
+.p_in_kontakt{
+    font-size:1.5em;
+    text-align: center;
+    padding-top:10px
+}
+
+#sec_kontakt1{
+    width:20%;
+    float: left;
+    margin-left:15%;
+}
+
+#sec_kontakt1 form{
+    font-size:1.1em;
+    width:100%;
+    margin-bottom:80px;
+}
+
+#sec_kontakt1 input{
+    width:100%;
+    height:50px;
+    border:0;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+    margin-top:15px;
+}
+#sec_kontakt1 textarea{
+    width:100%;
+    height:100px;
+    border:0;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+    margin-top:15px;
+}
+#sec_kontakt1 input:focus,#sec_kontakt1 textarea:focus{
+    outline-width: 0;
+}
+#sec_kontakt1 button{
+    margin-top:10px;
+    width:100%;
+    height:35px;
+}
+
+#sec_kontakt{
+    width:45%;
+    float: left;
+    margin-left:15%;
+}
+
+#sec_kontakt p{
+    text-align: center;
+    margin:0 auto;
+    font-size:1.4em;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+
+.left_p_kont{
+    text-align: left;
+    display: inline-block;
+    width:20%;
+    font-size:1.2em;
+    font-weight:600;
+    margin:8px 0 0 25%;
+}
+.right_p_kont{
+    width:30%;
+    display: inline-block;
+    text-align: right;
+    font-size:1.2em;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* responsywność */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .left_p_kont{
+        font-size:1em;
+        font-weight:600;
+        margin:8px 0 0 25%;
+    }
+    .right_p_kont{
+        font-size:1em;
+        width:35%;
+    }
+    .cont_cennik{
+        font-size:1.3em;
+        width:28%;
+        margin-left:4%;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1190px) {
+    .a_menu{
+        font-size:19px;
+        text-align: center;
+        height: 34px;
+        padding-top:5px;
+    }
+    #a_img{
+        margin-left:26px;
+        margin-right:5%;
+        margin-top:4px;
+    }
+    #nav img{
+        width: 55px;
+    }
+    .left_p_kont{
+        width:30%;
+    }
+    .right_p_kont{
+        font-size:1em;
+        width:45%;
+    }
+    .p_in_kontakt{
+        font-size:1.1em;
+        text-align: center;
+        padding-top:10px
+    }
+    .main_h2{
+        font-size:1.7em;
+    }
+    .cont_cennik{
+        font-size:1.1em;
+        width:29%;
+        margin-left:3%;
+    }
+    #header{
+        padding-top:58px;
+    }
+    .p_oferty{
+        font-size:1.3em;
+        margin-left:2%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    .img_soc{
+        width:26px;
+        margin:9px 0 0 9px;
+    }
+    .back_soc{
+        width:44px;
+        height: 44px;
+        
+    }
+    
+    .back_soc:hover .img_soc{
+        width:28px;
+        margin:8px 0 0 8px;
+    }
+
+    #upper a div{
+        width:50px;
+        height: 50px;
+    }
+    
+    #upper a div img{
+        padding:13px 0 0 14px;
+        width:23px;
+    }
+    
+    #upper:hover img{
+        padding:12px 0 0 13px;
+        width:25px;
+    }
+    #upper{
+        right:40px;
+        bottom:40px;
+    }
+    .main_h2{
+        font-size:1.5em;
+    }
+
+    .a_menu{
+        font-size:16px;
+        text-align: center;
+        height: 28px;
+        width:unset;
+        margin-left:4%;
+    }
+    #a_img{
+        margin-left:20px;
+        margin-right:3%;
+        margin-top:4px;
+    }
+    #nav a img{
+        width: 45px;
+    }
+    #header{
+        padding-top:54px;
+    }
+    .p_oferty{
+        font-size:1.1em;
+        margin-left:2%;
+    }
+
+    .cont_cennik{
+        width:85%;
+        margin-left:7.5%;
+        font-size:1.2em;
+        margin-bottom: 80px;
+    }
+    #cennik h3{
+        font-size:1.5em;
+    }
+    #cennik p{
+        width:85%;
+    }
+
+    .img_kontakt{
+        width:20%;
+    }
+
+    .p_in_kontakt{
+        font-size:1.1em;
+        padding-top:10px
+    }
+
+    #sec_kontakt1{
+        width:80%;
+        clear:both;
+        margin-left:10%;
+    }
+
+    #sec_kontakt{
+        width:80%;
+        clear:both;
+        margin-left:10%;
+        padding-bottom: 80px;
+    }
+
+    .left_p_kont{
+        width:30%;
+        font-size:1.15em;
+        margin:8px 0 0 15%;
+    }
+    .right_p_kont{
+        width:40%;
+        font-size:1.15em;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 768px) { 
+    .img_soc{
+        width:21px;
+        margin:7px 0 0 7px;
+    }
+    .back_soc{
+        width:34px;
+        height: 34px; 
+    }
+    
+    .back_soc:hover .img_soc{
+        width:22px;
+        margin:6px 0 0 6px;
+    }
+
+    #upper a div{
+        width:40px;
+        height: 40px;
+    }
+    
+    #upper a div img{
+        padding:11px 0 0 11px;
+        width:18px;
+    }
+    
+    #upper:hover img{
+        padding:10px 0 0 10px;
+        width:20px;
+    }
+    #upper{
+        right:30px;
+        bottom:30px;
+    }
+    .main_h2{
+        font-size:1.35em;
+    }
+
+    .a_menu{
+        font-size:15px;
+        height: 28px;
+        width:unset;
+        margin-left:4%;
+    }
+    #a_img{
+        margin-left:0px;
+        margin-right:0%;
+        margin-top:4px;
+    }
+    #nav a img{
+        display: none;
+    }
+    #header{
+        padding-top:54px;
+    }
+    .p_oferty{
+        font-size:1.1em;
+        margin-left:2%;
+    }
+
+    .cont_cennik{
+        width:85%;
+        margin-left:7.5%;
+        font-size:1.1em;
+        margin-bottom: 80px;
+    }
+    #cennik h3{
+        font-size:1.3em;
+    }
+    #cennik p{
+        width:85%;
+    }
+
+    .img_kontakt{
+        width:20%;
+    }
+
+    .p_in_kontakt{
+        font-size:1.1em;
+        padding-top:10px
+    }
+
+    #sec_kontakt1{
+        width:80%;
+        clear:both;
+        margin-left:10%;
+    }
+
+    #sec_kontakt{
+        width:80%;
+        clear:both;
+        margin-left:10%;
+        padding-bottom: 80px;
+    }
+
+    .left_p_kont{
+        width:30%;
+        font-size:1.1em;
+        margin:8px 0 0 10%;
+    }
+    .right_p_kont{
+        width:50%;
+        font-size:1.1em;
+    }
+}
+
+@media all and (max-width: 600px) { 
+    .img_soc{
+        width:21px;
+        margin:7px 0 0 7px;
+    }
+    .back_soc{
+        width:34px;
+        height: 34px; 
+    }
+    
+    .back_soc:hover .img_soc{
+        width:22px;
+        margin:6px 0 0 6px;
+    }
+
+    #upper a div{
+        width:40px;
+        height: 40px;
+    }
+    
+    #upper a div img{
+        padding:11px 0 0 11px;
+        width:18px;
+    }
+    
+    #upper:hover img{
+        padding:10px 0 0 10px;
+        width:20px;
+    }
+    #upper{
+        right:30px;
+        bottom:30px;
+    }
+    .main_h2{
+        font-size:1.2em;
+    }
+
+    #nav div{
+        margin-top:-10px;
+    }
+    .a_menu{
+        font-size:15px;
+        height: unset;
+        width:100%;
+        display: block;
+        padding:0;
+    }
+    #a_img{
+        margin-left:0px;
+        margin-right:0%;
+        margin-top:0px;
+    }
+    #nav a img{
+        display: none;
+    }
+    #header{
+        padding-top:154px;
+    }
+
+    .oferts{
+        width:80%;
+        float:none;
+        margin-left:10%;
+        padding-bottom:40px;
+    }
+    .p_oferty{
+        font-size:1.1em;
+        margin-left:2%;
+    }
+
+    .cont_cennik{
+        width:85%;
+        margin-left:7.5%;
+        font-size:1.1em;
+        margin-bottom: 80px;
+    }
+    #cennik h3{
+        font-size:1.3em;
+    }
+    #cennik p{
+        width:85%;
+    }
+
+    .img_kontakt{
+        width:20%;
+        display: block;
+    }
+
+    .p_in_kontakt{
+        font-size:1.1em;
+        padding-top:10px
+    }
+
+    #sec_kontakt1{
+        width:80%;
+        clear:both;
+        margin-left:10%;
+    }
+
+    #sec_kontakt{
+        width:90%;
+        clear:both;
+        margin-left:5%;
+        padding-bottom: 80px;
+    }
+
+    .left_p_kont{
+        width:27%;
+        font-size:1.15em;
+        margin:8px 0 0 6.5%;
+    }
+    .right_p_kont{
+        width:60%;
+        font-size:1.15em;
+    }
+    #hr_oferty{
+        width:88.5%;
+        margin:40px auto;
+    }
+}

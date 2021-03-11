@@ -1,0 +1,24 @@
+<div>
+    <a href="#header" id="a_img"><img src="img/racing.svg" ></a>
+    <a href="#main" class="a_menu">Strona główna</a>
+    <a href="#main" class="a_menu">Nasza oferta</a>
+    <a href="#main" class="a_menu">Cennik</a>
+    <a href="#main" class="a_menu">Kontakt</a>
+    <a href="http://ppkn.uni.wroc.pl/" class="a_menu">O nas</a>
+</div>
+<script>
+    $("#nav a:nth-of-type(2)").click(function(){
+        $("#main").load("main_page.html");
+    });
+
+    $("#nav a:nth-of-type(3)").click(function(){
+        $("#main").load("oferta.html");
+    });
+
+    $("#nav a:nth-of-type(4)").click(function(){
+        $("#main").load("cennik.html");
+    });
+    $("#nav a:nth-of-type(5)").click(function(){
+        $("#main").load("kontakt.html");
+    });
+</script>

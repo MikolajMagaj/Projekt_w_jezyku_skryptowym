@@ -1,0 +1,25 @@
+<div id="div_oferty">
+    <h2 class="main_h2">Najczęściej wybierane oferty</h2>
+    <hr id="hr_oferty">
+    <a class="a_oferty" href="#main">
+        <div class="oferts">
+            <img src="img/mustang.jpg">
+            <p class="p_oferty">Ford Mustang GT</br>450 KM</br>V8 5.0</p>  
+        </div>
+    </a>
+    <a class="a_oferty" href="#main">
+        <div class="oferts">
+            <img src="img/tico.jpg">
+            <p class="p_oferty">Tico Daewoo</br>41 KM</br>R3 0.8</p>  
+        </div>
+    </a>
+    <hr id="hr_oferty">
+    <h2 class="main_h2">Sprawdź nasze social media!</h2>
+    <hr id="hr_oferty">
+</div>
+
+<script>
+    $(".a_oferty").click(function(){
+        $("#main").load("oferta.html");
+    });
+</script>
