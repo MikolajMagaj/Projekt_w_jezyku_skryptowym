@@ -18,7 +18,7 @@
 - JavaScript
 
 # Link do strony: 
-http://panoramx.ift.uni.wroc.pl/~mmagaj/lista11/zadanie11-1/
+http://panoramx.ift.uni.wroc.pl/~mmagaj/projekt
 
 # Komentarz
 Póki co strona jest wypożyczalnią samochodów, lecz temat może się zmienić w trakcie.
