@@ -17,9 +17,31 @@
     <h2 class="main_h2">Sprawdź nasze social media!</h2>
     <hr id="hr_oferty">
 </div>
-
+<div id="oferta_focus">
+    <p class="p_focus"></p>
+    <p class="p_focus"></p>
+    <p class="p_focus"></p>
+    <p class="p_focus"></p>
+    <p class="p_focus"></p>
+    <p class="p_focus"></p>
+    <p class="p_focus"></p>
+    <p class="p_focus"></p>
+  </div>
 <script>
-    $(".a_oferty").click(function(){
-        $("#main").load("oferta.html");
+    // $(".a_oferty").click(function(){
+    //     $("#main").load("oferta.html");
+    // });
+    $("#oferta_focus").css("height",$(window).height()/2);
+    
+    $(".oferts").click(function(){
+        $("#oferta_focus").css("display","block");
+        $("body").css("background-color","rgba(128,128,128.0.5)");
     });
+
+    $("#oferta_focus").click(function(){
+        $(this).css("display","none");
+    });
+    
+
+    setInterval(function(){$("#oferta_focus").css("margin-top",-($(window).height()/2-26+($(document).height()-$(window).height()*0.75)-$(document).scrollTop()))},10);
 </script>
