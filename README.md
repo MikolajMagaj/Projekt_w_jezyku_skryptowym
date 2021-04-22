@@ -8,14 +8,13 @@
 
 - dodać całkowitą funkcjonalność linków, tj. aby każda oferta ze strony działała po kliknięciu jej,  
 
-- dodanie ciekawych skryptów, 
-
-- więcej pomysłów wyjdzie w trakcie pracy!  
+- dodanie ciekawych skryptów (panel wyświetlania ofert)
 
 # Technologie:  
 
 - HTML5 + CSS 4
 - JavaScript
+- Jquery
 
 # Link do strony: 
 http://panoramx.ift.uni.wroc.pl/~mmagaj/projekt
