@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>purVoiture</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <link rel="icon" type="image/png" href="img/racing.svg">
-  <link href='style/style.css' rel='stylesheet'>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <title>purVoiture</title>
+      <script src="scripts\jquery-3.6.0.min.js"></script>
+      <link rel="icon" type="image/png" href="img/racing.svg">
+      <link href='style/style.css' rel='stylesheet'>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     </head>
 <body>
   <div id="socials"></div>
@@ -16,46 +16,6 @@
   <div id="header"></div>
   <div id="main"></div>
   <div id="footer"></div>
+  <script type="text/javascript" src="scripts/banner_button.js"></script>
 </body>
-
-<script>
-// odpowiada za ładowanie zawartosci
-$("#header").load("header.html");
-$("#nav").load("nav.html");
-$("#socials").load("socials.html");
-$("#footer").load("footer.html");
-
-$(window).on("load",function(){$("#main").load("main_page.html");});
-
-//odpowiada za poprawne skalowanie slidera oraz socialsow wzgledem szerokosci i wysokosci okna
-$(window).resize(function(){
-  let imgWidth=$("#header").width();
-  let imgHeight=imgWidth/1.7777;
-  $("#header").css("height",imgHeight+"px");
-  let docHeight=document.documentElement.clientHeight;
-  let socHeight=$("#socials").height();
-  $("#socials").css("margin-top",(((docHeight-socHeight)/2)-10)+"px");
-});
-
-let imgWidth=$("#header").width();
-let imgHeight=imgWidth/1.7777;
-$("#header").css("height",imgHeight+"px");
-let docHeight=document.documentElement.clientHeight;
-let socHeight=$("#socials").height();
-$("#socials").css("margin-top",(((docHeight-socHeight)/2)-10)+"px");
-
-
-//odpowiada za pokazywanie guzika powrot do gory
-$(document).scroll(function () {
-		var y = $(this).scrollTop();
-		if (y > imgHeight/2) {
-			$('#upper').fadeIn('slow');
-    } 
-    else {
-		  $('#upper').fadeOut('slow');
-		}
-  });
-  
-
-</script>
-</html>
+</html> 

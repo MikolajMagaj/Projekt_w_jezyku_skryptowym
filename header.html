@@ -3,15 +3,13 @@
 <img id="2" src="img/rs7.jpg">
 <img id="3" src="img/koen.jpg">
 <script>
-
-$("img:nth-of-type(1)").show();
-let i=0;
-setInterval(change,6500);
-function change(){
-    $("#"+i).fadeOut(1000);
-    i++;
-    if(i==4) i=0;
-    $("#"+(i)).fadeIn(1000);
-}
-    
+    $("img:nth-of-type(1)").show();
+    let i=0;
+    setInterval(change,6500);
+    function change(){
+        $("#"+i).fadeOut(1000);
+        i++;
+        if(i==4) i=0;
+        $("#"+(i)).fadeIn(1000);
+    }  
 </script>
