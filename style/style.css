@@ -134,12 +134,44 @@
 }
 
 /* ---------------------------------------------------------------------------------------- */
+/* focus oferty */
+
+#oferta_focus{
+   width:70%;
+   background-color:rgb(241, 241, 241);
+   box-shadow: 5px 5px 8px 8px rgb(0 0 0 / 30%);
+   display:none;
+   margin-left:15%;
+   position: absolute;
+}
+#left_side{
+    width:65%;
+    margin-top:1.5%;
+    float:left;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: min(2vh, 22px);
+}
+#right_side{
+    width:35%;
+    float:left;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: min(14vh, 100px);
+}
+.p_focus{
+    font-size: 2.5vh;
+    padding-left:5%;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+}
+
+/* ---------------------------------------------------------------------------------------- */
 /* footer */
 
 #footer p{
     margin-left:3%;
     padding-top:4px;
-    
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -526,6 +558,13 @@ div#cennik div:nth-of-type(2) p{
         width:40%;
         font-size:1.15em;
     }
+    .p_focus{
+        font-size: 2.2vh;
+    }
+    #left_side{
+        margin-top:2%;
+        grid-gap: min(2.4vh, 22px);
+    }
 }
 
 @media all and (min-width: 600px) and (max-width: 768px) { 
@@ -630,6 +669,13 @@ div#cennik div:nth-of-type(2) p{
     .right_p_kont{
         width:50%;
         font-size:1.1em;
+    }
+    .p_focus{
+        font-size: 2vh;
+    }
+    #left_side{
+        margin-top:3%;
+        grid-gap: min(2.8vh, 22px);
     }
 }
 
@@ -751,5 +797,12 @@ div#cennik div:nth-of-type(2) p{
     #hr_oferty{
         width:88.5%;
         margin:40px auto;
+    }
+    .p_focus{
+        font-size: 1.8vh;
+    }
+    #left_side{
+        margin-top:3%;
+        grid-gap: min(2.8vh, 22px);
     }
 }
