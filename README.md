@@ -8,7 +8,6 @@
 
 - HTML5 + CSS 4
 - JavaScript
-- Jquery
 - JQuery
 
 # Link do strony: 
