@@ -36,7 +36,11 @@
 
         "r8" : ["Marka: Audi", "Model: R8", "Silnik: benzynowy V10 FSI 5.2", "Konie mechaniczne: 525", "Skrzynia biegów: 6-biegowa manualna", "Ilość miejsc: 2", "Liczba drzwi: 2", "Napęd: quattro", "Cena za 1 dzień: 800zł", "Cena za 3 dni: 2150zł", "Cena za 7 dni : 4200zł"],
 
-        "rs7" : ["Marka: Audi", "Model: RS7", "Silnik: benzynowy V10 TFSI 4.0", "Konie mechaniczne: 600", "Skrzynia biegów: 8-biegowa DCT", "Ilość miejsc: 4", "Liczba drzwi: 4", "Napęd: quattro", "Cena za 1 dzień: 1000zł", "Cena za 3 dni: 2700zł", "Cena za 7 dni : 5250zł"]
+        "rs7" : ["Marka: Audi", "Model: RS7", "Silnik: benzynowy V10 TFSI 4.0", "Konie mechaniczne: 600", "Skrzynia biegów: 8-biegowa DCT", "Ilość miejsc: 4", "Liczba drzwi: 4", "Napęd: quattro", "Cena za 1 dzień: 1000zł", "Cena za 3 dni: 2700zł", "Cena za 7 dni : 5250zł"],
+
+        "sb" : ["Marka: Skoda", "Model: Superb", "Silnik: benzynowy R4 16V TSI 2.0", "Konie mechaniczne: 280", "Skrzynia biegów: 6-biegowa DCT", "Ilość miejsc: 5", "Liczba drzwi: 4", "Napęd: 4x4", "Cena za 1 dzień: 280zł", "Cena za 3 dni: 780zł", "Cena za 7 dni : 1650zł"],
+
+        "as" : ["Marka: Arrinera", "Model: Hussarya", "Silnik: benzynowy V8 TFSI 6.2", "Konie mechaniczne: 650", "Skrzynia biegów: 6-biegowa LLS", "Ilość miejsc: 2", "Liczba drzwi: 2", "Napęd: tył", "Cena za 1 dzień: 1150zł", "Cena za 3 dni: 3000zł", "Cena za 7 dni : 6050zł"]
 
     };
 
